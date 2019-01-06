@@ -19,5 +19,8 @@
 				<p>Need a box of ingredients? Questions, concerns, shouts of agony?</p>
 				<p>Email me at r ohindaswani@gmail.com</p>
 			</footer>
+			{% if jekyll.environment == 'production' %}
+			{% include analytics.html %}
+			{% endif %}
 		</body>
 	</html>
